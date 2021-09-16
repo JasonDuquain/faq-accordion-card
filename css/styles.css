@@ -43,4 +43,47 @@ body {
   color: var(--gray-700);
   background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue)) no-repeat;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1440px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container__wrap {
+  
+}
+
+.container__heading {
+  text-transform: uppercase;
+  color: var(--desat-blue);
+  font-size: 1.35rem;
+}
+
+.container__qa {
+  
+}
+
+.container__qa:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container__question {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container__answer {
+  font-size: .9rem;
+  display: none;
+}
+
+.container__answer--active {
+  display: block;
 }
